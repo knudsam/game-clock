@@ -63,7 +63,6 @@ startQuizBtn.addEventListener("click", event => {
     questionOne();
 });
 }
-start();
 
 var highScores = function() {
         //div
@@ -349,3 +348,4 @@ var questionThree = function() {
         removeWrong();
     })
 }
+start();
