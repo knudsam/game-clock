@@ -142,3 +142,60 @@ header {
     background-color: var(--hoverColor);
     border: 2px solid var(--hoverColor);
 }
+
+.done-container {
+    display: grid;
+    grid-template-columns: .35fr 1fr .35fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.done-title {
+    grid-column: 2 / 3;
+    margin: 0 0 10px 85px
+}
+.score {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    margin: 5px 0 0 85px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.input-container {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+.label {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: center;
+    position: relative;
+    top: 11px;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.score-input {
+    position: relative;
+    top: 5px;
+    grid-column: 2 / 3;
+    max-height: 35px;
+}
+.submit-btn {
+    grid-column: 3 / 4;
+    position: relative;
+    top: 5px;
+    max-width: 100px;
+    max-height: 35px;
+    margin: 0 20px;
+    color: white;
+    background-color: lightpink;
+    border: 2px solid lightpink;
+    border-radius: 5px;
+}
+.submit-btn:hover {
+    background-color: var(--hoverColor);
+    border: 2px solid var(--hoverColor);
+}
